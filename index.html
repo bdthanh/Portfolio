@@ -23,11 +23,6 @@
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list grid">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link active-link">
-                            <i class="fas fa-home nav-link-icon"></i> Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
                         <a href="#about" class="nav-link">
                             <i class="fas fa-user nav-link-icon"></i> About
                         </a>
@@ -45,6 +40,11 @@
                     <li class="nav-item">
                         <a href="#skills" class="nav-link">
                             <i class="fas fa-file-alt nav-link-icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#certs" class="nav-link">
+                            <i class="fas fa-file-alt nav-link-icon"></i> Certificates
                         </a>
                     </li>
                     <li class="nav-item">
@@ -123,19 +123,22 @@
         <!--------------- ABOUT --------------->
         <section class="about section" id="about">
             <h2 class="section-title">About</h2>
-
+            <span class="section-subtitle"></span>
             <div class="about-container container grid">
                 <div class="about-container-img">
                     <img src="assets/img/about.jpg" alt="About" class="about-container-imgAlt">
                 </div>
 
                 <div class="about-container-data">
-                    <p class="about-container-data-description">To be edited</p>
-
+                    <p class="about-container-data-description">
+                        <div style="margin-bottom: 12px;">Penultimate Computer Engineering undergraduate with Data Engineering minor from National University of Singapore.</div>
+                        <div style="margin-bottom: 12px;">Enthusiastic learner with a passion for and Machine Learning and Artificial Intelligence.</div>
+                        <div style="margin-bottom: 12px;">Passionate about reading and re-implementing research papers.</div>
+                    </p>
                     
                     <div class="about-buttons">
                         <a download="" href="assets/pdf/Bui_Duc_Thanh_Resume.pdf" class="button button-flex">
-                            Download CV <i class="fas fa-download button-icon"></i>
+                            My Resume <i class="fas fa-download button-icon"></i>
                         </a>
                     </div>
                 </div>
@@ -145,7 +148,8 @@
         <!--------------- QUALIFICATION --------------->
         <section class="qualification section" id="qualification">
             <h2 class="section-title">Qualification</h2>
-            <span class="section-subtitle"></span>
+            <span class="section-subtitle">Refer to my <a download="" href="assets/pdf/Bui_Duc_Thanh_Resume.pdf">
+              resume</a> for details</span>
 
             <div class="qualification-container container">
                 <div class="qualification-tabs">
@@ -218,7 +222,10 @@
                         <div class="qualification-data">
                             <div class="qualification-data-alt">
                                 <h3 class="qualification-title">National University of Singapore</h3>
-                                <span class="qualification-subtitle">Bachelor of Computer Engineering, Minor in Data Engineering</span>
+                                <span class="qualification-subtitle">
+                                    <div>Bachelor of Computer Engineering, Minor in Data Engineering</div>
+                                    <div>CAP: 4.69/5.00</div>
+                                </span>
                                 <div class="qualification-calendar">
                                     <i class="fas fa-calendar-alt"></i>
                                     2021 - 2025
@@ -239,7 +246,10 @@
 
                             <div class="qualification-data-alt">
                                 <h3 class="qualification-title">Hanoi - Amsterdam High School for the Gifted</h3>
-                                <span class="qualification-subtitle">Major in Physics</span>
+                                <span class="qualification-subtitle">
+                                    <div>Major in Physics</div>
+                                    <div>GPA: 9.8/10.0</div>
+                                </span>
                                 <div class="qualification-calendar">
                                     <i class="fas fa-calendar-alt"></i>
                                     2014 - 2018
@@ -259,15 +269,28 @@
             <span class="section-subtitle"></span>
             <div class="portfolio-container container swiper-container">
                 <div class="swiper-wrapper">
+
+                    <!--------------- PORTFOLIO 0 --------------->
+                    <div class="portfolio-content grid swiper-slide">
+                        <img src="assets/img/portfolio0.jpg" alt="Portfolio" class="portfolio-img">
+                        <div class="portfolio-data">
+                            <h3 class="portfolio-title">FastSpeech 2 Implementation</h3>
+                            <p class="portfolio-description">• [In progress] Implementing TTS model FastSpeech2 architecture with PyTorch from scratch based on "FastSpeech 2: Fast and High-Quality End-to-End Text to Speech" paper.</p>
+                            <p class="portfolio-description">• [In progress] Creating my own dataset base on LJSpeech dataset scripts and trained the model to generate my voice</p>
+                            <a href="https://github.com/bdthanh/FastSpeech2Implementation" class="button button-flex button-small ">
+                                GitHub <i class="fab fa-github button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
                     <!--------------- PORTFOLIO 1 --------------->
                     <div class="portfolio-content grid swiper-slide">
                         <img src="assets/img/portfolio1.jpg" alt="Portfolio" class="portfolio-img">
                         <div class="portfolio-data">
-                            <h3 class="portfolio-title">Modern Website</h3>
-                            <p class="portfolio-description">Website adaptable to all devices, with ui components and
-                                animated interactions.</p>
-                            <a href="#" class="button button-flex button-small portfolio-button">
-                                Demo <i class="fas fa-arrow-right button-icon"></i>
+                            <h3 class="portfolio-title">EnVi Neural Machine Translation</h3>
+                            <p class="portfolio-description">• Implemented Transformer architecture with PyTorch from scratch based on "Attention is all you need" paper.</p>
+                            <p class="portfolio-description">• Experimented and trained the model with IWSLT’15 English-Vietnamese dataset containing 133K sentence pair.</p>
+                            <a href="https://github.com/bdthanh/EnViNMT-TransformerFromScratch" class="button button-flex button-small ">
+                                GitHub <i class="fab fa-github button-icon"></i>
                             </a>
                         </div>
                     </div>
@@ -275,26 +298,63 @@
                     <div class="portfolio-content grid swiper-slide">
                         <img src="assets/img/portfolio2.jpg" alt="Portfolio" class="portfolio-img">
                         <div class="portfolio-data">
-                            <h3 class="portfolio-title">Brand Design</h3>
-                            <p class="portfolio-description">Website adaptable to all devices, with ui components and
-                                animated interactions.</p>
-                            <a href="#" class="button button-flex button-small portfolio-button">
-                                Demo <i class="fas fa-arrow-right button-icon"></i>
+                            <h3 class="portfolio-title">Distracted Driver Detection</h3>
+                            <p class="portfolio-description">• Fine-tuned and experiments on several pre-trained models, including VGG16 and InceptionV3 with
+                              Tensorflow on Distracted Driver Dataset, culminating in a noteworthy 0.92 accuracy rate.</p>
+                            <p class="portfolio-description">• Best Project Award for CS3244 Machine Learning in the 22nd NUS School of Computing Term Project Showcase 
+                                <a href="https://credentials.nus.edu.sg/dccb2c3a-a9ca-48ee-a88b-63a9b5c6322e">[Certificate]</a>
+                            </p>
+                            <a href="https://github.com/bdthanh/DDD-DistractedDriverDetection" class="button button-flex button-small">
+                                GitHub <i class="fab fa-github button-icon"></i>
                             </a>
                         </div>
                     </div>
+
                     <!--------------- PORTFOLIO 3 --------------->
                     <div class="portfolio-content grid swiper-slide">
                         <img src="assets/img/portfolio3.jpg" alt="Portfolio" class="portfolio-img">
                         <div class="portfolio-data">
-                            <h3 class="portfolio-title">Online Store</h3>
-                            <p class="portfolio-description">Website adaptable to all devices, with ui components and
-                                animated interactions.</p>
-                            <a href="#" class="button button-flex button-small portfolio-button">
-                                Demo <i class="fas fa-arrow-right button-icon"></i>
+                            <h3 class="portfolio-title">Tokka Labs Quant Challenge 2024</h3>
+                            <p class="portfolio-description">• Analyzed historical market data of 10 cryptocurrencies, and developed a machine learning pipeline using
+                              LightGBM to forecast 10-minute log returns, achieving an average Pearson correlation coefficient of 0.047.</p>
+                            <p class="portfolio-description">• Secured top 6 with 1000USD consolation prize. 
+                                <a href="https://www.kaggle.com/competitions/tokka-labs-quant-challenge-2024/overview">[Link]</a>
+                            </p>
+                            <a href="https://github.com/bdthanh/TokkaLabsQuantChallenge2024" class="button button-flex button-small">
+                              GitHub <i class="fab fa-github button-icon"></i>
                             </a>
                         </div>
                     </div>
+
+                    <!--------------- PORTFOLIO 4 --------------->
+                      <div class="portfolio-content grid swiper-slide">
+                        <img src="assets/img/portfolio4.jpg" alt="Portfolio" class="portfolio-img">
+                        <div class="portfolio-data">
+                            <h3 class="portfolio-title">National AI Challenge 2024 - Pet Adoption Speed Prediction</h3>
+                            <p class="portfolio-description">• Analyzed PetFinder adoption data to identify key factors influencing adoption rates and developed a end-to-end machine
+                              learning pipeline to predict pet adoption speed, enhancing placement efficiency.</p>
+                            <p class="portfolio-description">• Top 15 Finalist</p>
+                            <a href="https://github.com/bdthanh/PetFinder-AdoptionSpeedPrediction" class="button button-flex button-small">
+                                GitHub <i class="fab fa-github button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--------------- PORTFOLIO 5 --------------->
+                      <div class="portfolio-content grid swiper-slide">
+                          <img src="assets/img/portfolio5.jpg" alt="Portfolio" class="portfolio-img">
+                          <div class="portfolio-data">
+                              <h3 class="portfolio-title">MonKey - A finacial tracking mobile app - Orbital 2022</h3>
+                              <p class="portfolio-description">• Programmed a cross-platform application for tracking transactions, enhancing financial management with
+                                customisable features, developed front-end with React Native and integrated with back-end using Firebase.</p>
+                              <p class="portfolio-description">• Apollo 11: Advanced Level of Achievemen.
+                                  <a href="https://credentials.nus.edu.sg/320df019-1455-405a-b687-e5190e224246">[Certificates]</a>
+                              </p>
+                              <a href="https://github.com/bdthanh/MonKey" class="button button-flex button-small">
+                                  GitHub <i class="fab fa-github button-icon"></i>
+                              </a>
+                          </div>
+                      </div>
                 </div>
                 <!--------------- Add Arrow --------------->
                 <div class="swiper-button-next">
@@ -313,7 +373,6 @@
         <!--------------- SKILLS --------------->
         <section class="skills section" id="skills">
             <h2 class="section-title">Skills</h2>
-
             <div class="skills-container">
     
               <div class="skills">
@@ -346,19 +405,19 @@
               </div>
 
               <div class="skills">
+                  <h3 class="skill-title">Cloud Service</h3>
+                  <ul>
+                      <li>Amazon Web Services (AWS)</li>
+                      <li>Google Cloud Platform (GCP)</li>
+                  </ul>
+              </div>
+
+              <div class="skills">
                   <h3 class="skill-title">Hardware</h3>
                   <ul>
                       <li>FPGA Programming (Verilog)</li> 
                       <li>Raspberry Pi</li>
                       <li>Arduino</li>
-                  </ul>
-              </div>
-              
-              <div class="skills">
-                  <h3 class="skill-title">Cloud Service</h3>
-                  <ul>
-                      <li>Amazon Web Services (AWS)</li>
-                      <li>Google Cloud Platform (GCP)</li>
                   </ul>
               </div>
 
@@ -372,6 +431,21 @@
               </div>
         </section>
 
+        <section class="certs section" id="certs">
+            <h2 class="section-title">Certificates</h2>
+            <span class="section-subtitle"></span>
+            <div class="certs-container">
+
+                <div class="skills">
+                    <h3 class="skill-title">AWS Certified CLF-C01</h3>
+                    <img src="assets/img/clf-c01.png" alt="AWS CLF-C01" class="certs-container-imgAlt">
+                </div>
+
+                <div class="skills">
+                    <h3 class="skill-title">AWS Certified MLS-C01</h3>
+                    <img src="assets/img/mls-c01.png" alt="AWS MLS-C01" class="certs-container-imgAlt">
+                </div>
+            </section>
         <!--------------- CONTACT ME --------------->
         <section class="contact section" id="contact">
             <h2 class="section-title">Contact Me</h2>
@@ -381,20 +455,19 @@
                     <div class="contact-information">
                         <i class="fas fa-phone contact-icon"></i>
                         <div>
-                            <span>(+65) 8741 0543</span>
+                            <a href="tel:+6587410543" class="contact-link">(+65) 8741 0543</a>
                         </div>
                     </div>
                     <div class="contact-information">
                         <i class="far fa-envelope contact-icon"></i>
                         <div>
-                            <span>bdthanh@u.nus.edu</span>
+                            <a href="mailto:bdthanh@u.nus.edu" class="contact-link">bdthanh@u.nus.edu</a>
                         </div>
                     </div>
                     <div class="contact-information">
                         <i class="fab fa-telegram-plane contact-icon"></i>
-
                         <div>
-                            <span>bdthanh</span>
+                          <a href="https://web.telegram.org/k/#@bdthanh" class="contact-link">bdthanh</a>
                         </div>
                     </div>
                 </div>
